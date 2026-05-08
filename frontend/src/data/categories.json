@@ -1,0 +1,54 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Agriculture & Rural",
+      "icon": "src/assets/schemes/icons/icons8-agriculture-80.png"
+    },
+    {
+      "id": 2,
+      "name": "Employment & Entrepreneurship",
+      "icon": "src/assets/schemes/icons/icons8-businessman-100.png"
+    },
+    {
+      "id": 3,
+      "name": "Health & Wellness",
+      "icon": "src/assets/schemes/icons/icons8-heart-health-100.png"
+    },
+    {
+      "id": 4,
+      "name": "Education",
+      "icon": "src/assets/schemes/icons/icons8-education-100.png"
+    },
+    {
+      "id": 5,
+      "name": "Housing",
+      "icon": "src/assets/schemes/icons/icons8-housing-64.png"
+    },
+    {
+      "id": 6,
+      "name": "Skills & Employment",
+      "icon": "src/assets/schemes/icons/icons8-jobs-58.png"
+    },
+    {
+      "id": 7,
+      "name": "Government",
+      "icon": "src/assets/schemes/icons/icons8-goverment-64.png"
+    },
+    {
+      "id": 8,
+      "name": "Industries",
+      "icon": "src/assets/schemes/icons/icons8-industries-64.png"
+    },
+    {
+      "id": 9,
+      "name": "Social Welfare",
+      "icon": "src/assets/schemes/icons/icons8-social-80.png"
+    },
+    {
+      "id": 10,
+      "name": "Transportation",
+      "icon": "src/assets/schemes/icons/icons8-steering-wheel-100.png"
+    }
+  ]
+}

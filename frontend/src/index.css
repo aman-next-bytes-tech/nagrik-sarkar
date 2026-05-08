@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dotted-background-light {
+    background-position: 0 0, 14px 14px;
+    background-size: 16px 16px;
+    background-image: radial-gradient(#18181820 5%, #00000007 15%);
+}
+
+.dotted-background {
+    background-position: 0 0, 14px 14px;
+    background-size: 16px 16px;
+    background-image: radial-gradient(#181818 5%, #0000001f 15%);
+}
+
+/* Hide scrollbar (cross-browser) */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+

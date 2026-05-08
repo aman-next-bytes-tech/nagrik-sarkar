@@ -1,0 +1,186 @@
+[
+    {
+        "headline": "Breaking News: Market Hits Record Highs",
+        "source": "The Financial Times",
+        "sourceLogo": "https://logo.clearbit.com/ft.com",
+        "time": "5 min ago",
+        "img": "https://picsum.photos/500/300?random=1",
+        "content": "The stock market reached new heights today, with analysts predicting continued growth."
+    },
+    {
+        "headline": "Global Warming: A Growing Threat to Biodiversity",
+        "source": "National Geographic",
+        "sourceLogo": "https://logo.clearbit.com/nationalgeographic.com",
+        "time": "10 min ago",
+        "img": "https://picsum.photos/500/300?random=2",
+        "content": "As temperatures rise, various species face the risk of extinction."
+    },
+    {
+        "headline": "Tech Giants Prepare for Next Big Move",
+        "source": "TechCrunch",
+        "sourceLogo": "https://logo.clearbit.com/techcrunch.com",
+        "time": "15 min ago",
+        "img": "https://picsum.photos/500/300?random=3",
+        "content": "In an industry that's constantly evolving, these companies are ready for their next steps."
+    },
+    {
+        "headline": "SpaceX to Launch New Satellite This Week",
+        "source": "Space News",
+        "sourceLogo": "https://logo.clearbit.com/spacenews.com",
+        "time": "20 min ago",
+        "img": "https://picsum.photos/500/300?random=4",
+        "content": "SpaceX is on track for its next big launch, promising more reliable global communication."
+    },
+    {
+        "headline": "COVID-19 Vaccine Update: New Boosters Available",
+        "source": "CNN",
+        "sourceLogo": "https://logo.clearbit.com/cnn.com",
+        "time": "30 min ago",
+        "img": "https://picsum.photos/500/300?random=5",
+        "content": "The latest COVID-19 boosters are now available to help curb the spread of new variants."
+    },
+    {
+        "headline": "New Electric Car Technology Could Revolutionize Industry",
+        "source": "Reuters",
+        "sourceLogo": "https://logo.clearbit.com/reuters.com",
+        "time": "1 hour ago",
+        "img": "https://picsum.photos/500/300?random=6",
+        "content": "A breakthrough in electric vehicle technology could change how we view transportation."
+    },
+    {
+        "headline": "Health Experts Warn of a Potential Flu Surge This Winter",
+        "source": "The New York Times",
+        "sourceLogo": "https://logo.clearbit.com/nytimes.com",
+        "time": "1 hour ago",
+        "img": "https://picsum.photos/500/300?random=7",
+        "content": "Experts are predicting a tough flu season, urging the public to get vaccinated."
+    },
+    {
+        "headline": "New AI Breakthrough Could Change Healthcare Forever",
+        "source": "MIT Technology Review",
+        "sourceLogo": "https://logo.clearbit.com/technologyreview.com",
+        "time": "2 hours ago",
+        "img": "https://picsum.photos/500/300?random=8",
+        "content": "Artificial intelligence is making big strides in predicting and diagnosing diseases."
+    },
+    {
+        "headline": "Rare Meteor Shower to Light Up the Night Sky",
+        "source": "NASA",
+        "sourceLogo": "https://logo.clearbit.com/nasa.gov",
+        "time": "3 hours ago",
+        "img": "https://picsum.photos/500/300?random=9",
+        "content": "Astronomers are excited about a rare meteor shower visible this weekend."
+    },
+    {
+        "headline": "New Species Discovered in the Amazon Rainforest",
+        "source": "BBC News",
+        "sourceLogo": "https://logo.clearbit.com/bbc.com",
+        "time": "4 hours ago",
+        "img": "https://picsum.photos/500/300?random=10",
+        "content": "A team of scientists has uncovered a new species in one of the most biodiverse places on Earth."
+    },
+    {
+        "headline": "Apple Unveils New iPhone with Revolutionary Features",
+        "source": "Apple Insider",
+        "sourceLogo": "https://logo.clearbit.com/appleinsider.com",
+        "time": "5 hours ago",
+        "img": "https://picsum.photos/500/300?random=11",
+        "content": "Apple's latest iPhone features a new design and cutting-edge technology that promises to be a game-changer."
+    },
+    {
+        "headline": "Breaking: World Leaders Convene for Emergency Summit",
+        "source": "The Guardian",
+        "sourceLogo": "https://logo.clearbit.com/theguardian.com",
+        "time": "6 hours ago",
+        "img": "https://picsum.photos/500/300?random=12",
+        "content": "World leaders are meeting to discuss a critical global issue that could change the course of history."
+    },
+    {
+        "headline": "New Study Links Diet and Mental Health",
+        "source": "Science Daily",
+        "sourceLogo": "https://logo.clearbit.com/sciencedaily.com",
+        "time": "7 hours ago",
+        "img": "https://picsum.photos/500/300?random=13",
+        "content": "Researchers have found a strong connection between diet and mental well-being."
+    },
+    {
+        "headline": "US Government Announces New Climate Action Plan",
+        "source": "The Washington Post",
+        "sourceLogo": "https://logo.clearbit.com/washingtonpost.com",
+        "time": "8 hours ago",
+        "img": "https://picsum.photos/500/300?random=14",
+        "content": "The Biden administration has unveiled an ambitious new plan to address climate change."
+    },
+    {
+        "headline": "Stock Market Sees Significant Dip Amid Economic Uncertainty",
+        "source": "Bloomberg",
+        "sourceLogo": "https://logo.clearbit.com/bloomberg.com",
+        "time": "9 hours ago",
+        "img": "https://picsum.photos/500/300?random=15",
+        "content": "Investors are on edge as the global economy faces increasing challenges."
+    },
+    {
+        "headline": "New Movie Breaks Box Office Records",
+        "source": "Variety",
+        "sourceLogo": "https://logo.clearbit.com/variety.com",
+        "time": "10 hours ago",
+        "img": "https://picsum.photos/500/300?random=16",
+        "content": "The latest blockbuster movie is breaking records worldwide with massive ticket sales."
+    },
+    {
+        "headline": "NASA Successfully Lands Rover on Mars",
+        "source": "SpaceX News",
+        "sourceLogo": "https://logo.clearbit.com/spacex.com",
+        "time": "11 hours ago",
+        "img": "https://picsum.photos/500/300?random=17",
+        "content": "NASA's latest rover has successfully landed on Mars and is sending back groundbreaking data."
+    },
+    {
+        "headline": "Food Delivery Service Expands to New Markets",
+        "source": "The Verge",
+        "sourceLogo": "https://logo.clearbit.com/theverge.com",
+        "time": "12 hours ago",
+        "img": "https://picsum.photos/500/300?random=18",
+        "content": "A popular food delivery app is expanding to new cities, making its service available to more customers."
+    },
+    {
+        "headline": "AI Creates Stunning Art That Mimics Famous Artists",
+        "source": "Wired",
+        "sourceLogo": "https://logo.clearbit.com/wired.com",
+        "time": "13 hours ago",
+        "img": "https://picsum.photos/500/300?random=19",
+        "content": "A new AI program can generate artwork that closely resembles the styles of renowned artists."
+    },
+    {
+        "headline": "Electric Airplanes May Become a Reality Sooner Than Expected",
+        "source": "Airbus News",
+        "sourceLogo": "https://logo.clearbit.com/airbus.com",
+        "time": "14 hours ago",
+        "img": "https://picsum.photos/500/300?random=20",
+        "content": "Electric airplanes are expected to reduce the carbon footprint of air travel significantly."
+    },
+    {
+        "headline": "Scientists Discover Potential Cure for Alzheimer's Disease",
+        "source": "HealthLine",
+        "sourceLogo": "https://logo.clearbit.com/healthline.com",
+        "time": "15 hours ago",
+        "img": "https://picsum.photos/500/300?random=21",
+        "content": "A promising new treatment has been shown to reverse some of the effects of Alzheimer's disease."
+    },
+    {
+        "headline": "Tesla's Latest Innovation Could Change the EV Market Forever",
+        "source": "Electric Vehicle News",
+        "sourceLogo": "https://logo.clearbit.com/healthline.com",
+        "time": "16 hours ago",
+        "img": "https://picsum.photos/500/300?random=22",
+        "content": "Tesla's latest vehicle model is poised to disrupt the electric car industry with new technology."
+    },
+    {
+        "headline": "Tokyo Sets New Standards for Urban Sustainability",
+        "source": "Global News",
+        "sourceLogo": "https://logo.clearbit.com/globalnews.ca",
+        "time": "17 hours ago",
+        "img": "https://picsum.photos/500/300?random=23",
+        "content": "Tokyo is taking bold steps towards a more sustainable future with new environmental initiatives."
+    }
+]
