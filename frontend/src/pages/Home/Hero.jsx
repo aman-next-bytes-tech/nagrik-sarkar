@@ -19,7 +19,7 @@ const Hero = () => {
                           Serving Humanity, <br className='md:hidden'/>
                           Shaping the Future
                         </h1>
-                        <p className="hidden md:flex text-lg md:text-xl max-w-2xl drop-shadow-md">
+                        <p className="hidden md:block text-lg md:text-xl max-w-2xl">
                           Our mission is to bring positive change by supporting those in need, promoting equality, and fostering a culture of care and compassion.
                         </p>
                       </div>
