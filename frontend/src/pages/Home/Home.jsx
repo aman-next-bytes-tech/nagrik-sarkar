@@ -63,8 +63,59 @@ const SchemesCategory = () => {
   )
 }
 
+const AboutIntro = () => {
+  return (
+    <section className="mt-10 bg-slate-50 px-6 py-12 sm:px-8 lg:px-10">
+      <div className="mx-auto grid max-w-screen-xl gap-8 md:grid-cols-2 md:gap-12">
+        <div>
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-600">
+            About NagrikSarkar
+          </p>
+          <h2 className="mt-3 text-3xl font-bold text-slate-950">
+            Empowering citizens through technology, transparency, and social welfare
+          </h2>
+
+          <div className="mt-5 text-sm leading-7 text-slate-600 md:text-base">
+            <p>
+              NagrikSarkar is a people-first digital platform dedicated to empowering citizens through technology, transparency, and social welfare. Our mission is to bridge the gap between government services and common people by providing a simple, accessible, and reliable one-step digital solution for all public welfare needs.
+            </p>
+            <p className="mt-4">
+              We believe that every citizen deserves equal access to information, opportunities, and government benefits. Through our website and mobile app, NagrikSarkar helps users discover, understand, and apply for various Central and State Government schemes related to education, healthcare, employment, pensions, agriculture, women empowerment, scholarships, digital services, and social welfare programs.
+            </p>
+          </div>
+
+          {/* <Link
+            to="/about"
+            className="mt-5 inline-flex items-center rounded-md bg-indigo-600 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-indigo-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400"
+          >
+            Read more
+          </Link> */}
+        </div>
+
+        <div className="border-t border-slate-200 pt-8 md:border-l md:border-t-0 md:pl-12 md:pt-0">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-600">
+            SWO Initiative
+          </p>
+          <h2 className="mt-3 text-3xl font-bold text-slate-950">
+            NagrikSarkar SWO Initiative
+          </h2>
+
+          <div className="mt-5 text-sm leading-7 text-slate-600 md:text-base">
+            <p>
+              NagrikSarkar aims to place one dedicated Social Welfare Officer (SWO) in every Gram Panchayat of Bihar to ensure easy and transparent access to government services for every citizen. The SWO will act as a local digital support partner, helping people with government schemes, online applications, documents, welfare benefits, awareness programs, and grievance assistance.
+            </p>
+            <p className="mt-4">
+              This initiative is focused on empowering rural citizens by providing reliable doorstep guidance, digital inclusion, and social welfare support without dependence on middlemen.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
 const Home = () => {
-  const [users, setUsers] = useState([]);
+  const [, setUsers] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -120,6 +171,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <AboutIntro />
       <Service />
       {/* <TeamMember /> */}
 

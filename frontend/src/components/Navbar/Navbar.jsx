@@ -16,6 +16,10 @@ const Navbar = () => {
                 href: '/news',
             },
             {
+                text: 'About us',
+                href: '/about',
+            },
+            {
                 text: 'Courses',
                 href: '/courses',
             },
