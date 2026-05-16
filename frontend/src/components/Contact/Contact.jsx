@@ -1,21 +1,45 @@
-import React from 'react'
+import PropTypes from 'prop-types';
 import Form from '../Utils/Form';
-import rocket from '../../assets/rocket.webp';
-import phone from '../../assets/phone.webp';
 
 
-const List = ({ icon, type,details }) => {
-    return (
-        <div className='flex gap-2 items-center'>
+const List = ({ icon, type, details, href }) => {
+    const content = (
+        <>
             <div className="border-2 border-slate-700 w-7 h-7 rounded grid place-items-center">
                 {icon}
             </div>
             <div className='text-sm'>
                 <p className='font-semibold'>{type}</p>
-                <p className='text-slate-300'>{details}</p>
+                <p className='text-slate-300 break-all'>{details}</p>
             </div>
+        </>
+    )
+
+    if (href) {
+        return (
+            <a
+                href={href}
+                target='_blank'
+                rel='noreferrer'
+                className='flex gap-2 items-center rounded-md transition-colors duration-200 hover:text-indigo-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400/70'
+            >
+                {content}
+            </a>
+        )
+    }
+
+    return (
+        <div className='flex gap-2 items-center'>
+            {content}
         </div>
     )
+}
+
+List.propTypes = {
+    icon: PropTypes.node.isRequired,
+    type: PropTypes.string.isRequired,
+    details: PropTypes.string.isRequired,
+    href: PropTypes.string,
 }
 
 const Contact = () => {
@@ -48,7 +72,20 @@ const Contact = () => {
                         <List
                             icon={<i className="text-slate-400 uil uil-comment-alt" />}
                             type={'Tweet Us'}
-                            details={'https://x.com/NagrikSarkar'}
+                            details={'@NagrikSarkar'}
+                            href={'https://x.com/NagrikSarkar'}
+                        />
+                        <List
+                            icon={<i className="text-slate-400 uil uil-facebook-f" />}
+                            type={'Facebook'}
+                            details={'@Nagrik-Sarkar'}
+                            href={'https://www.facebook.com/NagrikSarkar'}
+                        />
+                        <List
+                            icon={<i className="text-slate-400 uil uil-instagram" />}
+                            type={'Instagram'}
+                            details={'@nagriksarkar'}
+                            href={'https://www.instagram.com/NagrikSarkar'}
                         />
                     </div>
                 </div>
