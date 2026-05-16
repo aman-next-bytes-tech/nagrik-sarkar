@@ -38,7 +38,7 @@ const Contact = () => {
                         <List
                             icon={<i className="text-slate-400 uil uil-phone" />}
                             type={'Call Us'}
-                            details={'+91 1234567890'}
+                            details={'+91 8227008227'}
                         />
                         <List
                             icon={<i className="text-slate-400 uil uil-envelope" />}
