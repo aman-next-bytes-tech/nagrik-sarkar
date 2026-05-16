@@ -43,12 +43,12 @@ const Contact = () => {
                         <List
                             icon={<i className="text-slate-400 uil uil-envelope" />}
                             type={'send Email'}
-                            details={'Info@socialwelfare.com'}
+                            details={'info@nagriksarkar.com'}
                         />
                         <List
                             icon={<i className="text-slate-400 uil uil-comment-alt" />}
                             type={'Tweet Us'}
-                            details={'@socialwefare'}
+                            details={'https://x.com/NagrikSarkar'}
                         />
                     </div>
                 </div>
