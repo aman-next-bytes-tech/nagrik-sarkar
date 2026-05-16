@@ -27,7 +27,8 @@ jobs:
       - name: Build Frontend Image
         run: |
           docker build \
-          -t ghcr.io/aman-next-bytes-tech/nagrik-sarkar-frontend:latest .
+          -t ghcr.io/aman-next-bytes-tech/nagrik-sarkar-frontend:latest \
+          ./frontend
 
       - name: Push Frontend Image
         run: |
