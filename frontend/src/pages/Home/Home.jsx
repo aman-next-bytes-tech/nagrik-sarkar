@@ -69,7 +69,7 @@ const AboutIntro = () => {
       <div className="mx-auto grid max-w-screen-xl gap-8 md:grid-cols-2 md:gap-12">
         <div>
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-600">
-             NagrikSarkar
+            About NagrikSarkar
           </p>
           <h2 className="mt-3 text-3xl font-bold text-slate-950">
             Empowering citizens through technology, transparency, and social welfare
