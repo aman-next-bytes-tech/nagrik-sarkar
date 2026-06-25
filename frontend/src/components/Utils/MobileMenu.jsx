@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
-import Button from "./Button";
 import PropTypes from 'prop-types';
+import { LayoutDashboard, LogIn, LogOut, UserPlus, UsersRound, X } from "lucide-react";
 
 
 const MenuItems = ({ options, setMobileMenuOpen }) => {
@@ -28,6 +28,9 @@ const MenuItems = ({ options, setMobileMenuOpen }) => {
 };
 
 const MobileMenu = ({ options, mobileMenuOpen, setMobileMenuOpen, user, handleLogout }) => {
+    const profile = JSON.parse(localStorage.getItem("citizenProfile") || "null");
+    const displayName = profile?.name || "Citizen";
+
     return (
         <>
             {/* Backdrop */}
@@ -44,31 +47,30 @@ const MobileMenu = ({ options, mobileMenuOpen, setMobileMenuOpen, user, handleLo
                 ${mobileMenuOpen ? "translate-x-0" : "translate-x-full"}`}
             >
                 {/* Header */}
-                <div className="flex items-center justify-between px-6 py-5 border-b">
+                <div className="flex items-center justify-between border-b border-slate-100 px-6 py-5">
                     <div className="flex items-center gap-4">
-                        <img
-                            src="https://png.pngtree.com/png-vector/20191110/ourmid/pngtree-avatar-icon-profile-icon-member-login-vector-isolated-png-image_1978396.jpg"
-                            alt="User"
-                            className="w-12 h-12 rounded-full object-cover border"
-                        />
+                        <span className="flex h-12 w-12 items-center justify-center rounded-[8px] bg-indigo-600 text-lg font-black text-white shadow-sm">
+                            {user ? displayName.slice(0, 1).toUpperCase() : "N"}
+                        </span>
                         <div>
                             <p className="text-sm text-gray-500">Welcome</p>
                             <p className="font-semibold text-gray-900">
-                                Name of the user
+                                {user ? displayName : "Nagrik Sarkar"}
                             </p>
                         </div>
                     </div>
 
                     <button
                         onClick={() => setMobileMenuOpen(false)}
-                        className="text-gray-600 hover:text-gray-900 text-2xl"
+                        className="flex h-10 w-10 items-center justify-center rounded-[8px] border border-slate-200 text-gray-600 hover:bg-slate-50 hover:text-gray-900"
+                        aria-label="Close menu"
                     >
-                        ×
+                        <X size={21} />
                     </button>
                 </div>
 
                 {/* Menu Items */}
-                <nav className="px-6 py-6">
+                <nav className="px-5 py-6">
                     <ul className="flex flex-col gap-2">
                         <MenuItems
                             options={options}
@@ -78,40 +80,52 @@ const MobileMenu = ({ options, mobileMenuOpen, setMobileMenuOpen, user, handleLo
                 </nav>
 
                 {/* Footer (Optional) */}
-                <div className="flex flex-col gap-2 absolute bottom-0 w-full px-6 py-4 border-t">
+                <div className="absolute bottom-0 flex w-full flex-col gap-2 border-t border-slate-100 bg-white px-5 py-4">
                     {user ? (
                         <>
+                            <NavLink
+                                to="/dashboard"
+                                onClick={() => setMobileMenuOpen(false)}
+                                className="inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-[8px] bg-indigo-600 px-4 py-2 text-sm font-bold text-white transition hover:bg-indigo-700"
+                            >
+                                <LayoutDashboard size={18} />
+                                Dashboard
+                            </NavLink>
                             <button 
-                                className="w-full py-3 rounded-lg bg-indigo-600 text-white font-medium hover:bg-indigo-700 transition"
+                                className="inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-[8px] border border-rose-200 bg-rose-50 px-4 py-2 text-sm font-bold text-rose-700 transition hover:bg-rose-100"
                                 onClick={handleLogout}
                             >
+                                <LogOut size={18} />
                                 Logout
                              </button>
                         </>
 
                     ) : (
                         <>
-                            <Button onClick={() => setMobileMenuOpen(false)}>
-                                <NavLink
-                                    to="/login"
-                                >
-                                    Log In
-                                </NavLink>
-                            </Button>
-                            <Button onClick={() => setMobileMenuOpen(false)}>
-                                <NavLink
-                                    to="/register"
-                                >
-                                    Register
-                                </NavLink>
-                            </Button>
-                            <Button onClick={() => setMobileMenuOpen(false)}>
-                                <NavLink
-                                    to="/register-for-volunteer"
-                                >
-                                    Register for Volunteer
-                                </NavLink>
-                            </Button>
+                            <NavLink
+                                to="/login"
+                                onClick={() => setMobileMenuOpen(false)}
+                                className="inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-[8px] border border-slate-200 px-4 py-2 text-sm font-bold text-slate-700 transition hover:bg-slate-50"
+                            >
+                                <LogIn size={18} />
+                                Log In
+                            </NavLink>
+                            <NavLink
+                                to="/register"
+                                onClick={() => setMobileMenuOpen(false)}
+                                className="inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-[8px] bg-indigo-600 px-4 py-2 text-sm font-bold text-white transition hover:bg-indigo-700"
+                            >
+                                <UserPlus size={18} />
+                                Register
+                            </NavLink>
+                            <NavLink
+                                to="/register-for-volunteer"
+                                onClick={() => setMobileMenuOpen(false)}
+                                className="inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-[8px] border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-bold text-emerald-700 transition hover:bg-emerald-100"
+                            >
+                                <UsersRound size={18} />
+                                Volunteer
+                            </NavLink>
                         </>
                     )}
                     

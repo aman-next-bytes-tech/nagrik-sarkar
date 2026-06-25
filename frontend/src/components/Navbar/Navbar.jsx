@@ -12,12 +12,12 @@ const Navbar = () => {
                 href: '/',
             },
             {
-                text: 'News Events',
-                href: '/news',
-            },
-            {
                 text: 'About us',
                 href: '/about',
+            },
+            {
+                text: 'News Events',
+                href: '/news',
             },
             {
                 text: 'Courses',
@@ -46,11 +46,13 @@ const Navbar = () => {
 
     const handleLogout = () => {
         localStorage.removeItem("user");
+        localStorage.removeItem("citizenProfile");
         navigate("login");
     }
     return (
         <>
-            <nav id='navbar' className="sticky top-0 left-0 z-50 shadow-md">
+            <nav id='navbar' className="sticky top-0 left-0 z-50 border-b border-slate-300/80 bg-slate-100/95 shadow-[0_10px_30px_rgba(15,23,42,0.10)] backdrop-blur-xl">
+                <div className="h-1 bg-gradient-to-r from-indigo-600 via-sky-500 to-emerald-500" />
                 <TopNavbar 
                     mobileMenuOpen={mobileMenuOpen} 
                     setMobileMenuOpen={setMobileMenuOpen}

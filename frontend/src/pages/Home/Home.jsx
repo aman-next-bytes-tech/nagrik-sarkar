@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react";
-import api from "../../api.js";
 import Hero from "./Hero";
 import Service from "../../components/Service/Service";
 import Contact from "../../components/Contact/Contact";
@@ -115,36 +113,21 @@ const AboutIntro = () => {
 }
 
 const Home = () => {
-  const [, setUsers] = useState([]);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const res = await api.get("/user/");
-        setUsers(res.data);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    };
-
-    fetchData();
-  }, []);
-
   return (
     <>
       <Hero />
-      <div>
+      <section className="bg-white py-14">
         <h3 className="flex items-center justify-center gap-1 font-bold text-xl text-slate-900 my-6">
           {/* Trending Highlights */}
           {/* <img className='w-8' src={star} alt="" /> */}
         </h3>
-        <div className="flex flex-col md:flex-row justify-between between m-auto md:px-[14rem] gap-10 h-fit">
-          <div className="md:max-w-[50%]">
-            <h3 className="font-[500] text-indigo-500 mb-2 text-[1.4rem] px-[1rem]">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:gap-16 lg:px-8">
+          <div>
+            <h3 className="mb-4 text-[1.4rem] font-[500] text-indigo-500">
               Welcome to Social Welfare
             </h3>
-            <div className=" md:rounded-lg px-6">
-              <p className="font-[400]">
+            <div className="md:rounded-lg">
+              <p className="text-base font-[400] leading-8 text-slate-950">
                 In 1948-49, this department was established as ‘Harijan Sahayak
                 Vibhag’. To implement schemes related to the social sector,
                 another department, ‘Social Welfare Department,’ was established
@@ -162,20 +145,20 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className="md:max-w-[50%]">
-            <h3 className="font-[500] text-[1.4rem] px-[1rem] text-indigo-500 mb-2">
+          <div>
+            <h3 className="mb-4 text-[1.4rem] font-[500] text-indigo-500">
               Upcoming Events
             </h3>
             <Notification />
             {/* <Events /> */}
           </div>
         </div>
-      </div>
+      </section>
       <AboutIntro />
       <Service />
       {/* <TeamMember /> */}
 
-      <SchemesCategory />
+      {/* <SchemesCategory /> */}
 
       {/* <div className="md:px-[5.5rem] px-4 py-8">
         <div className="text-center mb-8">
